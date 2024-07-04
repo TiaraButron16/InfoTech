@@ -1,0 +1,68 @@
+:root {
+    --blanco: #ffffff;
+    --negro: #000000;
+    --azulOscuro: #001C30;
+    --celesteOscuro:#176B87;
+    --celesteClaro: #64CCC5;
+    --celeste: #DAFFFB;
+  }
+  
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    border-bottom: 2px solid #ccc; /* Borde gris */
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    margin-left: 30px; /* Mueve el logo un poco a la derecha */
+}
+
+.logo img {
+    width: 180px;
+    height: 50px;
+    margin-right: 10px;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+nav ul li {
+    margin-right: 40px; /* Aumenta el espacio entre los elementos de navegación */
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #000;
+    font-weight: bold;
+}
+
+/* Efecto hover para los enlaces de navegación */
+nav ul li a:hover {
+    color: #555;
+}
+
+/* Media Queries para diseño responsivo */
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    nav ul li {
+        margin-right: 0;
+        margin-top: 10px;
+    }
+}
